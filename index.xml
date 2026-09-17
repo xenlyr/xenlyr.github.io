@@ -1,18 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Xenlyr's blog</title><link>https://xenlyr.github.io/</link><description>Recent content on Xenlyr's blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 17 Sep 2026 15:00:00 +0800</lastBuildDate><atom:link href="https://xenlyr.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://xenlyr.github.io/posts/my-first-post/</link><pubDate>Tue, 01 Sep 2026 10:00:00 +0800</pubDate><guid>https://xenlyr.github.io/posts/my-first-post/</guid><description>&lt;h2 id="概述"&gt;概述&lt;/h2&gt;
-&lt;p&gt;在 Hugo 中，叶子捆绑（Leaf Bundle）代表一个不可再分、独立的叶子页面（例如一篇具体的博客文章或“关于我”页面）。&lt;/p&gt;
-&lt;h2 id="引用本地资源"&gt;引用本地资源&lt;/h2&gt;
-&lt;p&gt;你可以直接在 Markdown 中引用同目录下的图片，无需写绝对路径或放到 &lt;code&gt;static/&lt;/code&gt; 目录：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="特色图片" loading="lazy" src="https://xenlyr.github.io/posts/my-first-post/featured.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;也可以插入另一张架构图：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="架构图" loading="lazy" src="https://xenlyr.github.io/posts/my-first-post/diagram.png"&gt;&lt;/p&gt;
-&lt;h2 id="优势"&gt;优势&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;高内聚&lt;/strong&gt;：文章和图片都在同一个文件夹内，移动或删除非常方便。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;资源作用域&lt;/strong&gt;：这些图片属于当前页面的 &lt;code&gt;Page Resources&lt;/code&gt;，可以通过 Hugo 模板进行统一处理或加水印。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;mermaid test&lt;/p&gt;
-&lt;pre class="mermaid"&gt;
-pie title NETFLIX
-&amp;#34;Time spent looking for movie&amp;#34; : 90
-&amp;#34;Time spent watching it&amp;#34; : 10
-&lt;/pre&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Xenlyr's blog</title><link>https://xenlyr.github.io/</link><description>Recent content on Xenlyr's blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 17 Sep 2026 09:42:47 +0000</lastBuildDate><atom:link href="https://xenlyr.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 09 17 Build Blog With Hugo</title><link>https://xenlyr.github.io/posts/2026-09-17-build-blog-with-hugo/</link><pubDate>Thu, 17 Sep 2026 16:00:34 +0800</pubDate><guid>https://xenlyr.github.io/posts/2026-09-17-build-blog-with-hugo/</guid><description>&lt;h1 id="hugo-博客双仓库部署方案源码--github-pages"&gt;Hugo 博客双仓库部署方案：源码 + GitHub Pages&lt;/h1&gt;
+&lt;p&gt;本文介绍如何用两个 GitHub 仓库实现 Hugo 博客的自动化构建和部署。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以下 &lt;strong&gt;{user}&lt;/strong&gt; 代表你的 &lt;strong&gt;github 用户名&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="架构概览"&gt;架构概览&lt;/h2&gt;
+&lt;p&gt;核心思路：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;源码仓库（私有）负责写作和版本管理&lt;/li&gt;
+&lt;li&gt;静态文件仓库（公开）只存放 Hugo 构建产物&lt;/li&gt;
+&lt;li&gt;GitHub Pages 从静态文件仓库部署&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
